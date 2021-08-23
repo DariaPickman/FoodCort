@@ -1,0 +1,21 @@
+:host{
+  --size: 40px;
+}
+.close-button{
+  content: '+';
+  color: #fff;
+  font-size: calc(var(--size)*1.2);
+  line-height: 1;
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  top: -5px;
+  left: 370%;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.close-button:hover {
+  transform: scale(0.8) rotate(45deg);
+  color: #337AB7;
+}

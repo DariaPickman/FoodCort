@@ -1,0 +1,8 @@
+<div [ngClass]="'wrap'">
+  <div [ngClass]="classObj" #dropArea>
+    <img *ngIf="imgUrl !=''" src="{{imgUrl}}" [ngClass]="'img-class'"
+         />
+  </div>
+  <div [ngClass]="'img-name'">{{imgName}}</div>
+  <button (click)="clear()">Remove img</button>
+</div>

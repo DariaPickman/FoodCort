@@ -1,0 +1,35 @@
+:host {
+  --size: 7vmin;
+}
+
+.incrementer{
+  height: var(--size);
+  line-height: var(--size);
+  text-align: center;
+  font-Family: Verdana;
+  font-size: calc(var(--size)/1.5);
+  user-select: none;
+}
+.incrementer:hover{
+  cursor: pointer;
+}
+.incrementer:not(.currentValue):hover{
+  color: #1976d2;
+ }
+.container{
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  text-align: center;
+  color: #888;
+}
+
+
+.currentValue{
+  width: calc(var(--size) + 3vmin);
+  font-size: calc(4/7*var(--size));
+  color: #000000;
+  text-align: center;
+  line-height: var(--size);
+}
+

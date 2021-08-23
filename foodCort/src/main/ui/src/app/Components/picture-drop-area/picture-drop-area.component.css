@@ -1,0 +1,22 @@
+.wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.drop-area{
+  width: 200px;
+  min-height: 160px;
+  border: 1px dotted gray;
+}
+.highlight{
+  background-color: #eee;
+}
+
+.img-class{
+  width: 100%;
+}
+
+.img-name{
+  margin: 5px;
+}

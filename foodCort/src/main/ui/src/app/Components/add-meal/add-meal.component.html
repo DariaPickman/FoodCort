@@ -1,0 +1,10 @@
+<div class="card" >
+  <p>Drag Your Picture Here!</p>
+  <div class="image-container">
+    <app-picture-drop-area (picture)="mealPicture=$event"></app-picture-drop-area>
+  </div>
+  <p>meal Category:<input [(ngModel)]="mealCategory"/></p>
+  <p>meal Name:<input [(ngModel)]="mealName"/></p>
+  <p>meal Price:<input [(ngModel)]="mealPrice"/>$</p>
+  <button (click)="addMeal()">add Meal</button>
+</div>

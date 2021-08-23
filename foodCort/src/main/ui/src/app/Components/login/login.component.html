@@ -1,0 +1,29 @@
+
+
+<div class="content">
+  <app-close-button (close)="closeLogin()"></app-close-button>
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">
+    <img src="../../../assets/img/Login/user-icon.png" width="80"/>
+    <span #loginMessage >Login to your account</span>
+  </div>
+
+  <!--Login-->
+  <div *ngIf="loginCard" class="card cardLogin">
+    <input placeholder="login" [(ngModel)]="log">
+    <label>
+      <input placeholder="password" type="password" #pswInput [(ngModel)]="psw">
+      <svg class="password-view" #pswTarget (click)="toggleView()" width="20"></svg>
+    </label>
+    <button (click)="submit()">Login</button>
+    <button (click)="register()">Register</button>
+  </div>
+
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+<div class="card" >
+  <div class="image-container">
+    <img src={{mealUrl}} alt="meal" width="200"/>
+  </div>
+  <span>{{mealName}}</span> <span>{{mealPrice}}&nbsp;$</span>
+
+  <app-incrementer [currentValue]="mealValue"
+                   (minus)="handleMinus()"
+                   (plus)="handlePlus()">
+  </app-incrementer>
+ <!--<label>deactivated<input type="checkbox"></label>-->
+  <!--<label>top meal<input type="checkbox"></label>-->
+</div>
